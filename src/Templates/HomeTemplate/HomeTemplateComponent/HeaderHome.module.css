@@ -1,0 +1,53 @@
+.header_shadow {
+    -webkit-box-shadow: 1px 13px 9px 8px rgba(0, 0, 0, 0.77);
+    box-shadow: 1px 13px 9px 8px rgba(0, 0, 0, 0.77);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 50;
+    background-color: rgb(255, 255, 255);
+}
+.button_nav {
+    color: #bcbcbc;
+}
+.button_open_close {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+}
+.nav_col {
+    z-index: 55;
+    -webkit-box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.83);
+    box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.83);
+    min-height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 230px;
+    transition: all 0.5s;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    display: none;
+}
+.nav_responsive {
+    display: inline-block;
+}
+@media screen and (max-width: 992px) {
+    .button_open_close {
+        display: block;
+    }
+    .middleNav {
+        display: none;
+    }
+}
+@media screen and (min-width: 992px) {
+    .nav_col {
+        display: none;
+    }
+}

@@ -1,0 +1,77 @@
+#filmDetailsContent {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#imgFilm {
+    position: relative;
+}
+#imgHover {
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+#imgFilm:hover #imgHover {
+    opacity: 1;
+}
+.largeSize {
+    display: block;
+}
+.mediumSize {
+    display: none;
+}
+.iframe {
+    width: 50vw;
+    height: 50vh;
+}
+.filmTab {
+    width: 75%;
+    margin: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.tabThongTin {
+    width: 80%;
+    margin: auto;
+}
+@media screen and (max-width: 992px) {
+    #filmDetailsContent {
+        width: 100vw;
+        height: 60vh;
+
+        background-size: contain;
+    }
+    #imgHover {
+        opacity: 1;
+    }
+    .iframe {
+        width: 70vw;
+        height: 50vh;
+    }
+    .filmTab {
+        width: 100%;
+        margin: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .tabThongTin {
+        width: 100%;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .tabThongTin p {
+        font-size: 11px;
+    }
+    .largeSize {
+        display: none;
+    }
+    .mediumSize {
+        display: block;
+    }
+}

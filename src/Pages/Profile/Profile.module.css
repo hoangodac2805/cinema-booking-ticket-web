@@ -1,0 +1,8 @@
+.thongTin{
+background-image: url(../../../src/Assets/img/background-card-film.jpeg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+height: 100vh;
+}
